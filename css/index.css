@@ -1,0 +1,30 @@
+.header {
+  height: 520px;
+  background-color: grey;
+}
+
+/* Ribbon*/
+.propertyCard::before {
+  position: absolute;
+  top: 0;
+  left: -2.3rem;
+  display: block;
+  box-sizing: border-box;
+  /*content: "ON SALE";*/
+  content: attr(data-before);
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  background: #5e0928;
+  background: transparent;
+  height: 0;
+  width: 125px;
+  border: 25px solid transparent;
+  border-bottom: 25px solid #5e0928;
+  line-height: 23px;
+  transform: rotate(-45deg);
+  box-shadow: 0px 3px 5px -3px #000;
+}

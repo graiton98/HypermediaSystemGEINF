@@ -1,0 +1,38 @@
+/*FOOTER */
+footer {
+  background-color: #323232;
+  color: white;
+}
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.iconFooter {
+  font-size: 30px;
+}
+
+footer h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+hr {
+  background-color: white;
+}
+
+.footer-logo {
+  position: relative;
+}
+
+.hr-logo {
+  width: 70px;
+  position: absolute;
+  display: block;
+  left: 3.4rem;
+  top: 1.2rem;
+}

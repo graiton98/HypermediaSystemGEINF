@@ -1,0 +1,119 @@
+/*FORMULARIO*/
+form {
+  margin-top: 40px;
+}
+
+.form-group {
+  font-weight: bold;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+legend {
+  font-size: 5vh;
+  margin-left: 9vw;
+  font-weight: bolder;
+  color: #5e0928;
+}
+
+.formularioCheckbox {
+  margin-bottom: 10px;
+}
+
+.send {
+  background: #5e0928;
+  color: white;
+  border-color: #5e0928;
+}
+
+.send:hover {
+  background: white;
+  color: #5e0928;
+  border-color: #5e0928;
+}
+
+/*TRANSICTION LABEL*/
+.g-input {
+  position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.empty,
+.g-input label {
+  background: #f7f7f7;
+}
+
+.g-input label {
+  padding: 3px;
+  font-size: 13px;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: bottom left;
+  color: rgba(0, 0, 0, 0.671);
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  z-index: 1;
+  cursor: text;
+}
+
+.g-input input:focus,
+.g-input textarea:focus,
+.g-input textarea:focus,
+.g-input select:focus {
+  outline: 0;
+  border-color: black;
+  background: #f7f7f7;
+  box-shadow: 0 0 5px #5e0928;
+}
+
+.g-input input:focus + label,
+.g-input input:not(:placeholder-shown) + label,
+.g-input textarea:focus + label,
+.g-input textarea:not(:placeholder-shown) + label,
+.g-input select:focus + label,
+.g-input select:not(:placeholder-shown) + label {
+  transform: translateX(5px) translateY(-20px);
+  font-size: 14px;
+  color: #5e0928;
+}
+
+/*HEADER*/
+.bg-image {
+  background-image: url("../img/properties/property1.jpg");
+  height: 350px;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  text-align: center;
+  animation-name: titulos;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: all 1s linear;
+}
+
+@keyframes titulos {
+  from {
+    top: 450px;
+    opacity: 0;
+  }
+  to {
+    top: 330px;
+  }
+}

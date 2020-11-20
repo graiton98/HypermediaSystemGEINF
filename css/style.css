@@ -1,0 +1,43 @@
+body {
+  background-color: #f7f7f7 !important;
+  font-family: "Raleway", sans-serif !important;
+}
+
+.btn-button {
+  border-radius: 0px;
+  background-color: #5e0928;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  color: #5e0928;
+  font-weight: bolder;
+  font-size: 80px;
+}
+
+h2 {
+  color: #5e0928;
+  font-weight: bolder;
+  margin: 2rem 0;
+}
+
+h3 {
+  color: #5e0928;
+  font-weight: bolder;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card img {
+  height: 10rem;
+}
+
+.carousel-control-next {
+  z-index: 999;
+}

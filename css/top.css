@@ -1,0 +1,67 @@
+.top-navbar {
+  background-color: black;
+  position: relative !important;
+  z-index: 1001 !important;
+}
+
+.top {
+  height: 40px;
+}
+
+.top-navbar a {
+  color: white;
+  font-size: 14px;
+}
+
+.top-navbar a:hover {
+  text-decoration: none;
+}
+
+.separate {
+  border: 1px solid white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.languageFlag {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+.idiomaOpcion {
+  color: black !important;
+}
+
+.idiomaOpcion:hover {
+  color: white !important;
+  background-color: #5e0928;
+}
+
+@media (max-width: 992px) {
+  .top-navbar span {
+    display: none;
+  }
+}
+
+/* NAVBAR */
+
+.menu-navbar {
+  background-color: white;
+  z-index: 1000 !important;
+}
+
+.nav-item a {
+  color: black !important;
+}
+
+.nav-item.active a {
+  font-weight: bold !important;
+  color: #5e0928 !important;
+}
+
+@media (min-width: 992px) {
+  .nav-item.active a {
+    border-bottom: 2px solid #5e0928 !important;
+  }
+}
