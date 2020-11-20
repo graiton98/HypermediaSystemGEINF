@@ -3,7 +3,7 @@ var navigationBar = `<div class="container text-center">
       href="index.html"
       class="navbar-brand mx-auto d-block order-0 order-md-1"
     >
-      <img src="img/logo.jpeg" height="80" />
+      <img src="img/logo.png" height="80" />
     </a>
     <button
       class="navbar-toggler"
