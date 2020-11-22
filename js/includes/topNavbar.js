@@ -7,7 +7,7 @@ var topNavbar = `<div class="container d-flex align-items-center top">
     <div class="separate"></div>
     <a href="#">
       <i class="fa fa-envelope"></i>
-      <span>info@inmolopez.com</span>
+      <span>info@inmobiliariaudg.com</span>
     </a>
   </div>
   <div class="ml-auto d-flex">
@@ -29,11 +29,11 @@ var topNavbar = `<div class="container d-flex align-items-center top">
         data-toggle="dropdown"
       >
         <img
-          src="img/language/english.png"
+          src=""
           alt="language"
-          class="languageFlag"
+          class="languageFlag banderaActual"
         />
-        <span>English</span>
+        <span class="idiomaActual"></span>
       </a>
       <div
         class="dropdown-menu dropdown-menu-right"
@@ -41,7 +41,7 @@ var topNavbar = `<div class="container d-flex align-items-center top">
       >
         <button class="dropdown-item idiomaOpcion" key="en">
           <img
-            src="img/language/english.png"
+            src="img/language/en.png"
             alt="en"
             class="languageFlag"
           />
@@ -49,7 +49,7 @@ var topNavbar = `<div class="container d-flex align-items-center top">
         </button>
         <button class="dropdown-item idiomaOpcion" key="es">
           <img
-            src="img/language/spanish.png"
+            src="img/language/es.png"
             alt="es"
             class="languageFlag"
           />

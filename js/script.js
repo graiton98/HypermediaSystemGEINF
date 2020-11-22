@@ -1,14 +1,17 @@
 var translator;
 window.onload = function(){
-    translator = new Language('en');
+    // check if language is stored in webstorage
+    if(localStorage.getItem("lang") == undefined){
+        localStorage.setItem("lang", "en");
+        translator = new Language('en');
+    }else{
+        translator = new Language(localStorage.getItem("lang"));
+    }
+
+    actualitzarMenu();
     loadData();
     translationButtonEvent();
-    /*var url = window.location.href;
-    $("#navbarResponsive a").each(function() {
-        if(url == (this.href)) {
-        $(this).closest("li").addClass("active");
-        }
-    });*/
+    linieaMenu();
 }
 
 function loadData(){
@@ -25,12 +28,23 @@ function translationButtonEvent(){
         aux[i].addEventListener("click", function(){
             let k = this.getAttribute("key");
             if(translator.getLang() != k){
+                localStorage.removeItem("lang");
+                localStorage.setItem("lang", k);
                 translator.changeLang(k);
+                actualitzarMenu();
                 loadData();
             } 
             
         });
     } 
+}
+
+function actualitzarMenu(){
+    let banderaActual = document.querySelector(".banderaActual");
+    banderaActual.src = "img/language/" + translator.getLang()+".png";
+
+    let idiomaActual = document.querySelector(".idiomaActual");
+    idiomaActual.textContent = translator.getLang() == "en" ? "English" : "Español";
 }
 
 

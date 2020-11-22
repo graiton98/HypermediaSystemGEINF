@@ -38,12 +38,25 @@ document.querySelector(".navigationBar").innerHTML = navigationBar;
 document.querySelector("footer").innerHTML = footer;
 
 
+function linieaMenu(){
+  var url_string = window.location.href;
+  
+  var urlParams = new URLSearchParams(url_string);
 
-$(function(){
-  var url = window.location.href;
+  var exist = urlParams.has('n');
+  var e;
+  var s;
+  var url;
+  if(exist){
+    url = new URL(url_string);
+    e = url.searchParams.get("e");
+    s = url.searchParams.get("s");
+  }
   $("#navbarResponsive a").each(function() {
-    if(url == (this.href)) {
-      $(this).closest("li").addClass("active");
-    }
+    if(exist){
+      var aux = this.textContent.replace(/\s/g, '').toLocaleLowerCase();
+      if(aux === n || aux === s) $(this).closest("li").addClass("active");
+    }else if(url_string == (this.href)) $(this).closest("li").addClass("active");
   });
-});
+
+}

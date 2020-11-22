@@ -35,11 +35,12 @@
     <!-- TOP STYLE -->
     <link rel="stylesheet" href="css/top.css" />
 
-    <!-- INDEX STYLE -->
-    <link rel="stylesheet" href="css/index.css" />
 
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/onSaleForRent.css" />
 
     <!-- FOOTER STYLE -->
     <link rel="stylesheet" href="css/footer.css" />
@@ -52,15 +53,18 @@
     <!-- INMOBLES POPULATION -->
     <script src="js/population.js"></script>
 
+    <script src="js/types.js"></script>
+
     <!-- LANG -->
     <script src="js/lang.js"></script>
     <script src="lang/translations.js"></script>
+    <script src="js/types.js"></script>
 
     <!-- SCRIPT -->
     <script src="js/script.js"></script>
+
 </head>
 <body>
-
     <!-- TOP -->
     <div class="top-navbar"></div>
 
@@ -71,49 +75,36 @@
     </nav>
     <!-- END TOP-->
 
-    <!-- CAROUSEL -->
-    <div
-      id="carouselOutstanding"
-      class="carousel slide"
-      data-ride="carousel"
-    >
-      <ol class="carousel-indicators">
-        <li data-target="#carouselOutstanding" data-slide-to="0" class="active"></li>
-      </ol>
-      <div class="carousel-inner"></div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselOutstanding"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselOutstanding"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    <!-- END CAROUSEL -->
+    <!-- Formulari per filtrar -->
+    <form action="">
+        <div>
+          <label for="population">Population</label>
+          <select name="population" id="population"></select>
+        </div>
+        <div>
+          <label for="type">Type</label>
+          <select name="type" id="type"></select>
+        </div>
+        <div class="range-wrap">
+          <label for="maxPrice">Max Price:</label>
+          <input
+            type="range"
+            name="maxPrice"
+            class="range"
+            step="100"
+            id="range"
+          />
+          <output class="bubble"></output>
+        </div>
+        <input type="submit" value="Search" />
+      </form>
 
-    <!-- MAIN CONTENT -->
-    
-    <main class="container">
-      <h2>RECENT PROPERTIES</h2>
-      <div class="grid" id="mainContent"></div>
-    </main>
-    <!-- END MAIN CONTENT -->
+    <main id="properties" class="grid container"></main>
+
 
     <!-- FOOTER -->
     <footer></footer>
     <!-- END FOOTER -->
-
 
     <!-- Javascript -->
     <script
@@ -132,9 +123,10 @@
     crossorigin="anonymous"
     ></script>
 
-    <!-- SCRIPT INDEX -->
-    <script src="js/index.js"></script>
-
     <script src="js/loadHtml.js"></script>
+
+    <script src="js/onSaleForRent.js"></script>
+    
+
 </body>
 </html>

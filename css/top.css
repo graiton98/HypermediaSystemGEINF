@@ -65,3 +65,10 @@
     border-bottom: 2px solid #5e0928 !important;
   }
 }
+
+/* Fer efecte invers al boton de login register*/
+.loginRegister:hover {
+  color: #5e0928;
+  background-color: white;
+  border-color: #5e0928;
+}

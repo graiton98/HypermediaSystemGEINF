@@ -22,13 +22,13 @@ var navigationBar = `<div class="container text-center">
           <a class="nav-link" href="index.html" data-key="homeNav"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="onsale.html">ON SALE</a>
+          <a class="nav-link" href="onSaleForRent.html?t=0&e=onsale&s=enventa" data-key="onSaleNav"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="forrent.html">FOR RENT</a>
+          <a class="nav-link" href="onSaleForRent.html?t=1&s=forrent&e=enalquiler" data-key="forRentNav"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">CONTACT</a>
+          <a class="nav-link" href="contact.html" data-key="contactNav"></a>
         </li>
       </ul>
     </div>
@@ -36,12 +36,12 @@ var navigationBar = `<div class="container text-center">
       <ul class="nav navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <button type="button" class="btn btn-button">LOG IN</button>
+            <button type="button" class="btn btn-button loginRegister" data-key="loginNav"></button>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <button type="button" class="btn btn-button">REGISTER</button>
+            <button type="button" class="btn btn-button loginRegister" data-key="registerNav"></button>
           </a>
         </li>
       </ul>
