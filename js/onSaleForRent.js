@@ -2,7 +2,7 @@
 var url_string = window.location.href;
 var url = new URL(url_string);
 var t = url.searchParams.get("t");
-console.log(t);
+
 addDataOptions();
 //setMinMax();
 var populationValue = -1;
@@ -17,15 +17,17 @@ function addProperties() {
     propertiesDiv.innerHTML = "";
     properties.forEach(function (value) {
         let card = `
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/properties/${value.img}.jpg" alt="Card image cap">
+            <div class="card propertyCard" style="width: 18rem;" data-before="${ localStorage.getItem("lang") == "es" ? transactions[value.transaction].nameE : transactions[value.transaction].name}">
+                <img class="card-img-top" src="img/properties/${value.img[0]}.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title"><b>Ref: ${value.ref}</b></h5>
+                    <p class="card-text"><i class="fas fa-map-marker-alt"></i> <span data-key="street"></span> ${value.address}, ${population[value.population].name}, Menorca</p>
+                    <p class="card-text"><i class="fas fa-ruler-vertical"></i> ${value.m2} <small>m</small>2 <i class="fas fa-bed"></i> ${value.bed} <span data-key="bedrooms"></span></p>
+                    <p class="card-text"><i class="fas fa-bath"></i>${value.bath} <span data-key="bathrooms"></span> <i class="fas fa-warehouse"></i> ${value.garage} <span data-key="garage"></span></p>
+                    <p class="card-text"><b>${formatMoney(value.price)} €</b></p>
+                    <a href="property.html?ref=${value.ref}" class="btn btn-button verMas" data-key="showMoreButton"></a>
                 </div>
-            </div>
-            `;
+            </div>`;
 
         if(populationValue == -1){
             if(typeValue == -1){
@@ -56,6 +58,7 @@ rangeInput.max = transactions[0].maxPrice;
 function addDataOptions() {
 var populationSelect = document.getElementById("population");
 var typeSelect = document.getElementById("type");
+
 population.forEach(function (value, index) {
     addDataOption(value, populationSelect);
 });
@@ -66,7 +69,8 @@ types.forEach(function (value, index) {
 
 function addDataOption(value, select) {
 let option = document.createElement("option");
-option.text = value.name;
+console.log(value);
+option.text = localStorage.getItem("lang") == "es" ? value.nameE : value.name;
 option.value = value.id;
 select.add(option);
 }
@@ -105,5 +109,6 @@ function formSearchEvent(){
         console.log(populationValue);
         console.log(typeValue);
         addProperties();
+        loadData();
     });
 }

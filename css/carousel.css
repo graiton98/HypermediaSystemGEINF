@@ -92,7 +92,7 @@
   left: -10px;
   padding: 2px;
   position: absolute;
-  top: 0;
+  top: 7px;
   transform: rotate(135deg) translateY(-50%);
   transition: left 0.15s ease-in-out;
   width: 4px;
@@ -115,7 +115,7 @@
   padding: 2px;
   position: absolute;
   right: -10px;
-  top: 50%;
+  top: 43%;
   transform: rotate(-45deg) translateY(-50%);
   transition: right 0.15s ease-in-out;
   width: 4px;

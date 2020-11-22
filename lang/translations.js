@@ -26,7 +26,19 @@ var langData = {
                 "contactOther" : "Other",
                 "contactTerms1" : "I agree to receive information about new properties and other topics of my interest",
                 "contactTerms2" : "I accept the conditions of the LOPDGDD / RGPD",
-                "contactSend" : "Send"
+                "contactSend" : "Send",
+                "onSaleForRentPopulation" : "Population:",
+                "onSaleForRentAll" : "All",
+                "onSaleForRentType" : "Type",
+                "onSaleForRentSearch" : "Search",
+                "propertyContact" : "CONTACT",
+                "propertyName" : "Name",
+                "propertyPhone" : "Phone",
+                "propertyEmail" : "E-mail",
+                "propertyHelp" : "We'll never share your email with anyone else.",
+                "propertySend" : "Send",
+                "propertyPrevious" : "Previous",
+                "propertyNext" : "Next" 
             }
         },
         "es" : {
@@ -55,7 +67,19 @@ var langData = {
                 "contactOther" : "Otro",
                 "contactTerms1" : "Acepto recibir información sobre nuevas propiedades y otros temas de mi interés",
                 "contactTerms2" : "Acepto las condiciones de la LOPDGDD / RGPD",
-                "contactSend" : "Enviar"
+                "contactSend" : "Enviar",
+                "onSaleForRentPopulation" : "Población:",
+                "onSaleForRentAll" : "Todos",
+                "onSaleForRentType" : "Tipo:",
+                "onSaleForRentSearch" : "Buscar",
+                "propertyContact" : "CONTACTAR",
+                "propertyName" : "Nombre",
+                "propertyPhone" : "Teléfono",
+                "propertyEmail" : "E-mail",
+                "propertyHelp" : "Nunca compartiremos su correo electrónico con nadie más.",
+                "propertySend" : "Enviar",
+                "propertyPrevious" : "Anterior",
+                "propertyNext" : "Siguiente" 
             }
         }
     }

@@ -56,8 +56,11 @@ function linieaMenu(){
     if(url_string == (this.href)){
       $(this).closest("li").addClass("active");
       try{
+        var aux = this.textContent.replace(/\s/g, '').toLocaleLowerCase()
         $("header h1").text(this.textContent);
-        $("header h1").attr("data-key", this.textContent+"Nav");
+        $("header h1").attr("data-key", aux == enventa ? "onsale" : "forrent"+"Nav");
+
+        
       }catch(e){}
     } 
   });

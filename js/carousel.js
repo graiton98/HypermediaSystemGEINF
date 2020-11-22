@@ -95,8 +95,11 @@ class Carousel {
             galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
         });
 
-        !!galleryControlsContainer.childNodes[0] ? galleryControlsContainer.childNodes[0].innerHTML = this.carouselControls[0] : null;
-        !!galleryControlsContainer.childNodes[1] ? galleryControlsContainer.childNodes[1].innerHTML = this.carouselControls[1] : null;
+        /*!!galleryControlsContainer.childNodes[0] ? galleryControlsContainer.childNodes[0].innerHTML = this.carouselControls[0] : null;
+        !!galleryControlsContainer.childNodes[1] ? galleryControlsContainer.childNodes[1].innerHTML = this.carouselControls[1] : null;*/
+        
+        $(galleryControlsContainer.childNodes[0]).attr("data-key", "propertyPrevious");
+        $(galleryControlsContainer.childNodes[1]).attr("data-key", "propertyNext");
     }
 
     // Add a click event listener to trigger setCurrentState method to rearrange carousel

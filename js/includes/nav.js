@@ -1,7 +1,8 @@
-var navigationBar = `<div class="container text-center">
+var navigationBar = `
+  <div class="container text-center">
     <a
       href="index.html"
-      class="navbar-brand mx-auto d-block order-0 order-md-1"
+      class="navbar-brand mx-auto d-block "
     >
       <img src="img/logo.png" height="80" />
     </a>
@@ -14,7 +15,7 @@ var navigationBar = `<div class="container text-center">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div
-      class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0"
+      class="navbar-collapse collapse dual-nav w-50 justify-content-end"
       id="navbarResponsive"
     >
       <ul class="navbar-nav">
@@ -32,7 +33,10 @@ var navigationBar = `<div class="container text-center">
         </li>
       </ul>
     </div>
-    <div class="navbar-collapse collapse dual-nav w-50 order-2">
+  </div>`;
+
+  /*
+  <div class="navbar-collapse collapse dual-nav w-50 order-2">
       <ul class="nav navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">
@@ -45,5 +49,4 @@ var navigationBar = `<div class="container text-center">
           </a>
         </li>
       </ul>
-    </div>
-  </div>`;
+    </div>*/

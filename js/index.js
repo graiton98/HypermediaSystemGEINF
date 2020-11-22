@@ -21,8 +21,8 @@ function addContent(){
                             <div class="card-body">
                                 <h5 class="card-title">${value.title}</h5>
                                 <p class="card-text">${population[value.population].name}, Menorca</p>
-                                <p>${value.price} €</p>
-                                <a href="#" class="btn btn-primary">Show more</a>
+                                <p><b>${formatMoney(value.price)} €</b></p>
+                                <a href="property.html?ref=${value.ref}" class="btn btn-button verMas" data-key="showMoreButton"></a>
                             </div>
                             </div>
                         </div>

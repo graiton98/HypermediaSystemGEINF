@@ -2,7 +2,7 @@ var footer = `<div class="container" style="padding-top: 30px; padding-bottom: 1
     <div class="row">
         <div class="col-sm-4 footer-logo">
             <h3>INMO LOPEZ</h3>
-            <hr class="hr-logo">
+            
             <a href="index.html" data-key="homeNav"></a><br>
             <a href="onSaleForRent.html?t=0&n=forsale" data-key="onsaleNav"></a><br>
             <a href="onSaleForRent.html?t=1&n=forrent" data-key="forrentNav"></a><br>
