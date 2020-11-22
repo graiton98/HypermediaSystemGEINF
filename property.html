@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmo Lopez | Hypermedia System</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+    <!-- Font Awesome Icons-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+
+    <!-- INCLUDES -->
+    <script src="js/includes/topNavbar.js"></script>
+    <script src="js/includes/nav.js"></script>
+    <script src="js/includes/footer.js"></script>
+
+    <!-- TOP STYLE -->
+    <link rel="stylesheet" href="css/top.css" />
+
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/property.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+
+    <!-- FOOTER STYLE -->
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <script src="js/transactions.js"></script>
+
+    <!-- INMOBLES PROPERTIES -->
+    <script src="js/properties.js"></script>
+
+    <!-- INMOBLES POPULATION -->
+    <script src="js/population.js"></script>
+
+    <script src="js/types.js"></script>
+
+    <!-- LANG -->
+    <script src="js/lang.js"></script>
+    <script src="lang/translations.js"></script>
+    <script src="js/types.js"></script>
+
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <!-- TOP -->
+    <div class="top-navbar"></div>
+
+    <nav
+        class="navbar navbar-expand-md navbar-light justify-content-between shadow menu-navbar sticky-top navigationBar">
+
+    </nav>
+    <!-- END TOP-->
+
+    <!--CAROUSEL-->
+    <div class="container">
+        <div class="row">
+            <div class="gallery col-sm-8">
+                <div class="gallery-container">
+                    <img class="gallery-item" src="http://fakeimg.pl/300/?text=1">
+                    <img class="gallery-item" src="http://fakeimg.pl/300/?text=2">
+                    <img class="gallery-item" src="http://fakeimg.pl/300/?text=3">
+                    <img class="gallery-item" src="http://fakeimg.pl/300/?text=4">
+                    <img class="gallery-item" src="http://fakeimg.pl/300/?text=5">
+                </div>
+                <div class="gallery-controls"></div>
+            </div>
+
+            <!--FORM-->
+            <div class="col-sm-4">
+                <form>
+                    <fieldset>
+                        <legend>CONTACT</legend>
+                        <hr>
+                        <div class="g-input form-group">
+                            <input type="text" class="form-control empty" id="name" name="name" required
+                                placeholder=" " />
+                            <label for="name"><i class="fas fa-user"></i> Name</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="g-input form-group col-sm-3">
+                                <select id="selectState" class="form-control empty" name="selectState">
+                                    <option selected disabled>Prefix</option>
+                                </select>
+                                <label for="selectState"></label>
+                            </div>
+                            <div class="g-input form-group col-sm-9">
+                                <input type="tel" class="form-control empty" id="phone" name="phone"
+                                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required placeholder=" " />
+                                <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                            </div>
+                        </div>
+                        <div class="g-input form-group">
+                            <input type="email" class="form-control empty" id="emailaddress" name="emailaddress"
+                                required placeholder=" " />
+                            <label for="emailaddress"><i class="fas fa-envelope"></i> Email</label>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary send">SEND</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="img/mapa.png" id="imgMapa" alt="Mapa" width="100px" height="100px">
+            </div>
+            <div class="col-sm-6">
+                <div class="row description">
+                    <span class="col-sm-4"><i class="fas fa-ruler-vertical"></i> 72 m2</span>
+                    <span class="col-sm-4"><i class="fas fa-bed"></i> 3 Bedrooms</span>
+                </div>
+                <div class="row description">
+                    <span class="col-sm-4"><i class="fas fa-bath"></i> 2 Bathrooms</span>
+                    <span class="col-sm-4"><i class="fas fa-warehouse"></i> 1 Garage</span>
+                </div>
+                <div class="row description">
+                    <span class="col-sm-12"><i class="fas fa-map-marker-alt"></i> Calle Bellavista, 5, Mahón,
+                        Menorca</span>
+                </div>
+                <div class="row">
+                    <span class="col-sm-4 price">150.000€</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+    <footer></footer>
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <script src="js/loadHtml.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/property.js"></script>
+</body>
+
+</html>
