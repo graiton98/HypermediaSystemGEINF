@@ -43,7 +43,7 @@ function linieaMenu(){
   
   var urlParams = new URLSearchParams(url_string);
 
-  var exist = urlParams.has('n');
+  var exist = urlParams.has('e');
   var e;
   var s;
   var url;
@@ -53,10 +53,30 @@ function linieaMenu(){
     s = url.searchParams.get("s");
   }
   $("#navbarResponsive a").each(function() {
-    if(exist){
-      var aux = this.textContent.replace(/\s/g, '').toLocaleLowerCase();
-      if(aux === n || aux === s) $(this).closest("li").addClass("active");
-    }else if(url_string == (this.href)) $(this).closest("li").addClass("active");
+    if(url_string == (this.href)){
+      $(this).closest("li").addClass("active");
+      try{
+        $("header h1").text(this.textContent);
+        $("header h1").attr("data-key", this.textContent+"Nav");
+      }catch(e){}
+    } 
   });
 
 }
+
+
+/*
+
+if(exist){
+      var aux = this.textContent.replace(/\s/g, '').toLocaleLowerCase();
+      if(aux === n || aux === s){
+        /*$(this).closest("li").addClass("active");
+        console.log("hola");
+        var att = document.createAttribute("data-key");       // Create a "class" attribute
+        att.value = "democlass"; 
+        console.log(att);
+        document.querySelector("header h1").setAttribute("class", "hola");
+      } 
+    }else if(url_string == (this.href)) $(this).closest("li").addClass("active");
+
+*/

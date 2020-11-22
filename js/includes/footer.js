@@ -3,10 +3,10 @@ var footer = `<div class="container" style="padding-top: 30px; padding-bottom: 1
         <div class="col-sm-4 footer-logo">
             <h3>INMO LOPEZ</h3>
             <hr class="hr-logo">
-            <a href="index.html">HOME</a><br>
-            <a href="onSaleForRent.html?t=0&n=forrent">ON SALE</a><br>
-            <a href="onSaleForRent.html?t=1&n=forrent">FOR RENT</a><br>
-            <a href="contact.html">CONTACT</a>
+            <a href="index.html" data-key="homeNav"></a><br>
+            <a href="onSaleForRent.html?t=0&n=forsale" data-key="onsaleNav"></a><br>
+            <a href="onSaleForRent.html?t=1&n=forrent" data-key="forrentNav"></a><br>
+            <a href="contact.html"></a>
         </div>
         <div class="col-sm-4">
             <a href="#">

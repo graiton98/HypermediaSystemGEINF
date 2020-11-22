@@ -41,3 +41,7 @@ h3 {
 .carousel-control-next {
   z-index: 999;
 }
+
+.card i {
+  color: #5e0928;
+}

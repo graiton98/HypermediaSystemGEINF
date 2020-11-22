@@ -1,23 +1,50 @@
 
+var url_string = window.location.href;
+var url = new URL(url_string);
+var t = url.searchParams.get("t");
+console.log(t);
 addDataOptions();
-setMinMax();
+//setMinMax();
+var populationValue = -1;
+var typeValue = -1;
 addProperties();
+formSearchEvent();
+
 
 function addProperties() {
-let propertiesDiv = document.getElementById("properties");
-properties.forEach(function (value, index) {
-    let card = `
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/properties/${value.img}.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+    var cont = 0;
+    let propertiesDiv = document.getElementById("properties");
+    propertiesDiv.innerHTML = "";
+    properties.forEach(function (value) {
+        let card = `
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/properties/${value.img}.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
             </div>
-        </div>
-        `;
-    propertiesDiv.innerHTML += card;
-});
+            `;
+
+        if(populationValue == -1){
+            if(typeValue == -1){
+                if(value.transaction == t) {
+                    propertiesDiv.innerHTML += card;
+                    cont++;
+                }
+            }else if(typeValue == value.type && value.transaction == t){
+                propertiesDiv.innerHTML += card;
+                cont++;
+            } 
+        }else if(populationValue == value.type && value.transaction == t) {
+            propertiesDiv.innerHTML += card;
+            cont++;
+        }
+    });
+    if(cont == 0){
+        propertiesDiv.innerHTML = "No hay inmuebles con esas características";
+    }
 }
 
 function setMinMax() {
@@ -65,4 +92,18 @@ bubble.innerHTML = val;
 
 // Sorta magic numbers based on size of the native UI thumb
 bubble.style.left = `calc(${newValue}% + (${newPosition}px))`;
+}
+
+
+function formSearchEvent(){
+    document.querySelector("#searchForm").addEventListener("submit", function(event){
+        event.preventDefault();
+        
+        document.querySelector("#type");
+        populationValue = document.querySelector("#population").value;
+        typeValue = document.querySelector("#type").value;
+        console.log(populationValue);
+        console.log(typeValue);
+        addProperties();
+    });
 }

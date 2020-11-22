@@ -22,10 +22,10 @@ var navigationBar = `<div class="container text-center">
           <a class="nav-link" href="index.html" data-key="homeNav"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="onSaleForRent.html?t=0&e=onsale&s=enventa" data-key="onSaleNav"></a>
+          <a class="nav-link" href="onSaleForRent.html?t=0&e=onsale&s=enventa" data-key="onsaleNav"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="onSaleForRent.html?t=1&s=forrent&e=enalquiler" data-key="forRentNav"></a>
+          <a class="nav-link" href="onSaleForRent.html?t=1&s=forrent&e=enalquiler" data-key="forrentNav"></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html" data-key="contactNav"></a>

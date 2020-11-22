@@ -75,17 +75,28 @@
     </nav>
     <!-- END TOP-->
 
+    <!-- CABECERA -->
+    <header class="header">
+      <div class="bg-image"></div>
+      <h1 class="bg-text"></h1>
+    </header>
+
+
     <!-- Formulari per filtrar -->
-    <form action="">
-        <div>
+    <form action="" class="container" id="searchForm">
+        
           <label for="population">Population</label>
-          <select name="population" id="population"></select>
-        </div>
-        <div>
+          <select name="population" id="population">
+            <option value="-1">Todos</option>
+          </select>
+        
+        
           <label for="type">Type</label>
-          <select name="type" id="type"></select>
-        </div>
-        <div class="range-wrap">
+          <select name="type" id="type">
+            <option value="-1">Todos</option>
+          </select>
+        
+        <!--<div class="range-wrap">
           <label for="maxPrice">Max Price:</label>
           <input
             type="range"
@@ -95,7 +106,7 @@
             id="range"
           />
           <output class="bubble"></output>
-        </div>
+        </div>-->
         <input type="submit" value="Search" />
       </form>
 

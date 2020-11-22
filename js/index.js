@@ -6,7 +6,7 @@ function addContent(){
     var carIndi = document.querySelector(".carousel-indicators");
     var primer = true;
     var cont = 0;
-    properties.forEach(function (value, index) {
+    properties.forEach(function (value) {
       if (value.outstanding == 1) {
         let card = `
                     <div class="carousel-item header ${
@@ -36,16 +36,5 @@ function addContent(){
         }
         cont++;
       }
-      let card = `
-      <div class="card propertyCard" style="width: 18rem;" data-before="${transactions[value.transaction].name}">
-                <img class="card-img-top" src="img/properties/${value.img}.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-      `;
-      contingut.innerHTML += card;
     });
 }

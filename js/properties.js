@@ -13,7 +13,10 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property1"],
-    title: 'MAGNIFICENT VILLA ON THE COAST'
+    title: 'MAGNIFICENT VILLA ON THE COAST',
+    bath: 2,
+    garage: 0,
+    bed : 2
   },
   {
     ref: 1,
@@ -29,7 +32,10 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property2"],
-    title: 'MAGNIFICENT HOUSE ON THE COAST'
+    title: 'MAGNIFICENT HOUSE ON THE COAST',
+    bath: 2,
+    garage: 0,
+    bed : 2
   },
   {
     ref: 2,
@@ -45,7 +51,10 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property3"],
-    title: 'MAGNIFICENT GARAGE '
+    title: 'MAGNIFICENT GARAGE',
+    bath: 2,
+    garage: 0,
+    bed : 2
   },
   {
     ref: 3,
@@ -61,7 +70,10 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property3"],
-    title: 'MAGNIFICENT RUSTIC HOUSE'
+    title: 'MAGNIFICENT RUSTIC HOUSE',
+    bath: 2,
+    garage: 0,
+    bed : 2
   },
   {
     ref: 4,
@@ -77,7 +89,10 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property3"],
-    title: 'MAGNIFICENT VILLA'
+    title: 'MAGNIFICENT VILLA',
+    bath: 2,
+    garage: 0,
+    bed : 2
   },
   {
     ref: 5,
@@ -93,7 +108,10 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property3"],
-    title: 'MAGNIFICENT HOUSE'
+    title: 'MAGNIFICENT HOUSE',
+    bath: 2,
+    garage: 0,
+    bed : 2
   },
   {
     ref: 6,
@@ -109,7 +127,10 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property3"],
-    title: 'MAGNIFICENT GARAGE'
+    title: 'MAGNIFICENT GARAGE',
+    bath: 2,
+    garage: 0,
+    bed : 2
   },
   {
     ref: 7,
@@ -125,7 +146,10 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property3"],
-    title: 'MAGNIFICENT APARTMENT'
+    title: 'MAGNIFICENT APARTMENT',
+    bath: 2,
+    garage: 0,
+    bed : 2
   },
   {
     ref: 8,
@@ -141,7 +165,10 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property3"],
-    title: 'MAGNIFICENT APARTMENT'
+    title: 'MAGNIFICENT APARTMENT',
+    bath: 2,
+    garage: 0,
+    bed : 2
   },
   {
     ref: 9,
@@ -157,6 +184,9 @@ const properties = [
     description: "Hi I'm a description",
     postalCode: "07701",
     img: ["property3"],
-    title: 'MAGNIFICENT VILLA'
+    title: 'MAGNIFICENT VILLA',
+    bath: 2,
+    garage: 0,
+    bed : 2
   }
 ];

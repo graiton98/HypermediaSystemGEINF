@@ -81,39 +81,3 @@ legend {
   font-size: 14px;
   color: #5e0928;
 }
-
-/*HEADER*/
-.bg-image {
-  background-image: url("../img/properties/property1.jpg");
-  height: 350px;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg-text {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  text-align: center;
-  animation-name: titulos;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  transition: all 1s linear;
-}
-
-@keyframes titulos {
-  from {
-    top: 450px;
-    opacity: 0;
-  }
-  to {
-    top: 330px;
-  }
-}
